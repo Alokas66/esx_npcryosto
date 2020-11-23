@@ -5,7 +5,6 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)																
 
 RegisterServerEvent('esx_npcpaskagiveMoney')
 AddEventHandler('esx_npcpaskagiveMoney', function(rahamaara)
-	TriggerEvent("DiscordBot:triggerrit", source, "Triggeras 'esx_npcpaskagiveMoney', "..rahamaara)
 	local _source  = source
 	local xPlayer  = ESX.GetPlayerFromId(_source)
 	xPlayer.addMoney(rahamaara)
